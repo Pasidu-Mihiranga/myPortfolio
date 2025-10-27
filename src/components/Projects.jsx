@@ -40,7 +40,7 @@ const Projects = () => {
               >
                 <figure className="overflow-hidden">
                   <img
-                    src={project.image}
+                    src={project.image && project.image.startsWith('/') ? `${import.meta.env.BASE_URL}${project.image.slice(1)}` : project.image || "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&h=600&fit=crop"}
                     alt={project.title}
                     className="w-full h-64 object-cover hover:scale-110 transition-transform duration-300"
                   />

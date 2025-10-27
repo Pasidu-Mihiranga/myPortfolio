@@ -76,7 +76,7 @@ const Achievements = () => {
                       </div>
                     )}
                     <img
-                      src={achievement.image}
+                      src={achievement.image.startsWith('/') ? `${import.meta.env.BASE_URL}${achievement.image.slice(1)}` : achievement.image}
                       alt={achievement.title}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       onError={(e) => {
