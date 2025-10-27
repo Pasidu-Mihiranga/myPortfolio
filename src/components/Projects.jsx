@@ -5,7 +5,7 @@ const Projects = () => {
 
   useEffect(() => {
     // Load projects from JSON file
-    fetch('/projects.json')
+    fetch(`${import.meta.env.BASE_URL}projects.json`)
       .then(response => response.json())
       .then(data => setProjects(data))
       .catch(error => {

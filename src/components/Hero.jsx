@@ -105,7 +105,7 @@ const Hero = () => {
           <div className="absolute top-16 right-0 w-full max-w-xs profile-photo-mobile md:relative md:flex md:justify-end md:items-start md:pt-8 md:opacity-100 md:z-0 md:col-span-1 md:max-w-none lg:pt-20">
             <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-2xl z-0">
               <img
-                src="/images/home/profile-photo.png"
+                src={`${import.meta.env.BASE_URL}images/home/profile-photo.png`}
                 alt="Pasindu Mihiranga - Profile"
                 className="w-full h-auto rounded-3xl object-cover shadow-2xl"
                 onError={(e) => {

@@ -6,7 +6,7 @@ const Achievements = () => {
 
   useEffect(() => {
     // Load achievements from JSON file
-    fetch('/achievements.json')
+    fetch(`${import.meta.env.BASE_URL}achievements.json`)
       .then(response => response.json())
       .then(data => setAchievements(data))
       .catch(error => {
