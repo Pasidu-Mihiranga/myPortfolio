@@ -54,7 +54,7 @@ const Achievements = () => {
                 )}
                 
                 {achievement.image && (
-                  <figure className="overflow-hidden h-80 relative">
+                  <figure className="overflow-hidden h-80 relative rounded-t-3xl">
                     {/* Position Badge on Image */}
                     {achievement.position && (
                       <div className={`absolute top-4 right-4 z-10 flex items-center gap-2 bg-base-100/90 backdrop-blur-sm px-3 py-2 rounded-full shadow-lg ${
@@ -78,7 +78,7 @@ const Achievements = () => {
                     <img
                       src={achievement.image.startsWith('/') ? `${import.meta.env.BASE_URL}${achievement.image.slice(1)}` : achievement.image}
                       alt={achievement.title}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300 rounded-b-3xl"
                       onError={(e) => {
                         e.target.style.display = 'none'
                       }}
