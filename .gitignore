@@ -34,4 +34,4 @@ logs
 Thumbs.db
 
 # Personal files (don't commit CV)
-public/cv.pdf
+# public/cv.pdf
