@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/myPortfolio">
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header toggleTheme={toggleTheme} currentTheme={theme} />
