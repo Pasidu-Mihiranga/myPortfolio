@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <Router basename={import.meta.env.PROD ? '/myPortfolio' : undefined}>
+    <Router>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header toggleTheme={toggleTheme} currentTheme={theme} />
