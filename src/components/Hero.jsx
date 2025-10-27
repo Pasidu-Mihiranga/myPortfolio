@@ -7,7 +7,7 @@ const Hero = () => {
     try {
       console.log('Starting CV download...')
       // Fetch the CV file
-      const response = await fetch('/cv.pdf')
+      const response = await fetch(`${import.meta.env.BASE_URL}cv.pdf`)
       
       if (!response.ok) {
         throw new Error(`Failed to load CV: ${response.statusText}`)
