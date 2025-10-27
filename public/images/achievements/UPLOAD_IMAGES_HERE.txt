@@ -1,0 +1,3 @@
+Upload images for ACHIEVEMENTS page here.
+
+Supported formats: .jpg, .jpeg, .png, .webp

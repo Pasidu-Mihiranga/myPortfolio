@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Shopshere E-commerse Project",
+    "description": "Fully functioning Marketplace website",
+    "tech": ["React", "Node.js", "MongoDB", "Express"],
+    "image": "",
+    "link": "https://github.com/Pasidu-Mihiranga/Shopshere"
+  },
+  {
+    "title": "ScootyBook",
+    "description": " Fully functioning vehicle Booking website",
+    "tech": ["React", "Node.js", "MongoDB", "Express","DaisyUI","TailwindCSS"],
+    "image": "",
+    "link": "https://github.com/Pasidu-Mihiranga/ScootyBook"
+  },
+  {
+    "title": "MazeMaster Micro Controller Based Project",
+    "description": "Fully functioning multiplayer, multilevel maze game",
+    "tech": ["Arduino", "C++"],
+    "image": ""
+    
+  }
+]
+

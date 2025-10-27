@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Theme Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fade In Animation for Hero Text */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Theme-aware opacity for profile photo in mobile */
+[data-theme="emerald"] .profile-photo-mobile {
+  opacity: 0.7;
+}
+
+[data-theme="synthwave"] .profile-photo-mobile {
+  opacity: 0.3;
+}
+
+/* Reduce font sizes by 2pt on desktop view */
+@media (min-width: 768px) {
+  .hero-text-desktop-reduced {
+    font-size: calc(1em - 3pt);
+  }
+}

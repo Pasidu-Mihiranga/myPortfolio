@@ -1,0 +1,5 @@
+Upload your project images here!
+
+Just add PNG or JPG files and reference them in projects.json like:
+"image": "/images/projects/your-image.png"
+

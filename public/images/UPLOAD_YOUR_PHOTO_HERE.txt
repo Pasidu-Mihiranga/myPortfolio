@@ -1,0 +1,10 @@
+INSTRUCTIONS FOR UPLOADING YOUR PHOTO:
+
+1. Save your photo in this folder
+2. Name it exactly: "profile-photo.jpg" or "profile-photo.png"
+3. Recommended size: 784x1045 pixels (will be auto-resized)
+4. Supported formats: .jpg, .jpeg, .png, .webp
+
+Your photo will appear on the right side of the landing page on desktop screens.
+
+After uploading, restart the dev server with: npm run dev

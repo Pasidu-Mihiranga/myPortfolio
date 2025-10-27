@@ -1,0 +1,4 @@
+Upload your achievement images/certificates here!
+
+Just add PNG or JPG files and reference them in achievements.json
+
