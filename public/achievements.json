@@ -4,7 +4,7 @@
     "institution": "Zebra Technologies",
     "year": "2025",
     "description": "Team Gmora developed an innovative solution for Zebra Technologies, securing the championship title",
-    "image": "/achievements/innovatex_hackathon/thumbnail.png",
+    "image": "/achievements/innovatex_hackathon/thumbnail.webp",
     "position": 1
   },
   {
@@ -12,8 +12,31 @@
     "institution": "University of Sri Jayawardanapura",
     "year": "2025",
     "description": "Team TrippleBoot secured 6th place out of 150+ teams in this intense competitive programming challenge.",
-    "image": "/achievements/j'puraxtreme2.0/thumbnail.jpg",
+    "image": "/achievements/j'puraxtreme2.0/thumbnail.webp",
     "position": 6
+  },
+  {
+    "title": "HaXtreme4.0",
+    "institution": "University of Ruhuna",
+    "year": "2025",
+    "description": "Team Gmora selected for finalist out of 150+ teams in this intense competitive programming challenge.",
+    "image": "/achievements/HaXtreme4.0/thumbnail.webp",
+    "position": "finalist"
+  },
+  {
+    "title": "AlgoArena",
+    "institution": "Leo Club of University of Sri Jayawardanapura",
+    "year": "2025",
+    "description": "Team Gmora developed an innovative social media mobile app solution for Leo club, securing the second runner up title.",
+    "image": "/achievements/AlgoArena/thumbnail.webp",
+    "position": 3
+  },
+  {
+    "title": "BioFusion",
+    "institution": "University of Sri Jayawardanapura",
+    "year": "2026",
+    "description": "Team Gmora selected for Top 5 teams in this intense competitive AI/ML programming challenge.",
+    "image": "/achievements/BioFusion/thumbnail.webp",
+    "position": "finalist"
   }
 ]
-

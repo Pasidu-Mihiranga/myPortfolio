@@ -2,23 +2,120 @@
   {
     "title": "Shopshere E-commerse Project",
     "description": "Fully functioning Marketplace website",
-    "tech": ["React", "Node.js", "MongoDB", "Express"],
-    "image": "",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express"
+    ],
     "link": "https://github.com/Pasidu-Mihiranga/Shopshere"
   },
   {
     "title": "ScootyBook",
     "description": " Fully functioning vehicle Booking website",
-    "tech": ["React", "Node.js", "MongoDB", "Express","DaisyUI","TailwindCSS"],
-    "image": "",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "DaisyUI",
+      "TailwindCSS"
+    ],
     "link": "https://github.com/Pasidu-Mihiranga/ScootyBook"
   },
   {
     "title": "MazeMaster Micro Controller Based Project",
     "description": "Fully functioning multiplayer, multilevel maze game",
-    "tech": ["Arduino", "C++"],
-    "image": ""
-    
+    "tech": [
+      "Arduino",
+      "C++"
+    ],
+    "link": "https://github.com/ThanojBuddhima/MazeMaster_codes"
+  },
+  {
+    "title": "Auditra",
+    "description": "Full stack mobile application for Auditing Company with offline first approach",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "JWT",
+      "Material Design"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/Auditra"
+  },
+  {
+    "title": "Face ID System",
+    "description": "Advanced face recognition system with real-time identification, continuous learning, and multiple detection and recognition models",
+    "tech": [
+      "Python",
+      "OpenCV",
+      "Flask",
+      "SQLite",
+      "MTCNN",
+      "RetinaFace",
+      "ArcFace",
+      "FaceNet",
+      "VGG-Face",
+      "Dlib",
+      "Computer Vision",
+      "Machine Learning"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/Face-ID-System"
+  },
+  {
+    "title": "Leo Connect",
+    "description": "Cross-platform social networking mobile application for Leo Club members in Sri Lanka and Maldives with real-time feeds, events, and role-based access",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "Firestore",
+      "Firebase Authentication",
+      "Cloud Storage",
+      "SendGrid",
+      "Provider"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/AlgoArena"
+  },
+  {
+    "title": "Project Aegis",
+    "description": "Disaster response and emergency management platform for Sri Lanka with real-time SOS, offline-first PWA field app, and command dashboard",
+    "tech": [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "DaisyUI",
+      "Zustand",
+      "PWA",
+      "Node.js",
+      "Express.js",
+      "Socket.io",
+      "IndexedDB",
+      "JWT",
+      "Nginx",
+      "PM2"
+    ],
+    "link": "https://github.com/KusalPabasara/Apiit"
+  },
+  {
+    "title": "Sakura",
+    "description": "Multilingual AI-powered music and lyrics generation platform that transforms emotions into personalized songs with lyrics and AI-generated audio",
+    "tech": [
+      "SvelteKit",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "AI",
+      "Natural Language Processing",
+      "MMAudio",
+      "Claude AI",
+      "Multi-language Support"
+    ],
+    "link": "https://github.com/Kalana-Pankaja/sakura"
   }
 ]
-

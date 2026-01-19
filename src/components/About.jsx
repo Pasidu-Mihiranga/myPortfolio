@@ -1,7 +1,28 @@
+import { useState, useEffect } from 'react'
 import { SiPython, SiReact, SiJavascript, SiNodedotjs, SiHtml5, SiCss3, SiTailwindcss, SiGit, SiMongodb, SiMysql, SiPostgresql, SiExpress, SiFlask, SiDjango, SiPandas, SiLinux, SiNextdotjs, SiC, SiCplusplus, SiFlutter, SiSpring } from 'react-icons/si'
 import { FaGithub, FaJava, FaWindows } from 'react-icons/fa'
 
 const About = () => {
+  const [projectCount, setProjectCount] = useState(0)
+
+  // Calculate years of experience from 2024 to present
+  const startYear = 2024
+  const currentYear = new Date().getFullYear()
+  const yearsOfExperience = Math.max(1, currentYear - startYear)
+
+  // Fetch project count from projects.json
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}projects.json`)
+      .then(response => response.json())
+      .then(data => {
+        setProjectCount(data.length)
+      })
+      .catch(error => {
+        console.error('Error loading projects:', error)
+        setProjectCount(6) // Fallback value
+      })
+  }, [])
+
   const skills = [
     { name: "Python", icon: <SiPython className="w-12 h-12" />, color: "text-blue-500" },
     { name: "Java", icon: <FaJava className="w-12 h-12" />, color: "text-orange-500" },
@@ -46,37 +67,37 @@ const About = () => {
                   My Story
                 </h3>
                 <p className="text-base-content/80 text-lg font-['Poppins'] leading-relaxed">
-                  I am a passionate Information Technology undergraduate at the University of Moratuwa, 
-                  with a strong foundation in programming and web development. My journey in tech started 
+                  I am a passionate Information Technology undergraduate at the University of Moratuwa,
+                  with a strong foundation in programming and web development. My journey in tech started
                   with curiosity and has evolved into a deep love for solving complex problems through code.
                 </p>
                 <p className="text-base-content/80 text-lg font-['Poppins'] leading-relaxed">
-                  Whether it's building scalable web applications, implementing machine learning algorithms, 
-                  or creating intuitive user interfaces, I approach each project with enthusiasm and attention 
-                  to detail. I thrive in collaborative environments and am always eager to learn from experienced 
+                  Whether it's building scalable web applications, implementing machine learning algorithms,
+                  or creating intuitive user interfaces, I approach each project with enthusiasm and attention
+                  to detail. I thrive in collaborative environments and am always eager to learn from experienced
                   professionals while contributing innovative solutions.
                 </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="stat bg-base-100 rounded-box shadow-xl">
-                <div className="stat-title text-base-content/70">Years of Experience</div>
-                <div className="stat-value text-primary">1+</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div className="stat bg-base-100 rounded-box shadow-xl p-4 sm:p-6">
+                <div className="stat-title text-base-content/70 text-xs sm:text-sm">Years of Experience</div>
+                <div className="stat-value text-primary text-3xl sm:text-4xl">{yearsOfExperience}+</div>
               </div>
-              <div className="stat bg-base-100 rounded-box shadow-xl">
-                <div className="stat-title text-base-content/70">Projects Completed</div>
-                <div className="stat-value text-primary">6+</div>
+              <div className="stat bg-base-100 rounded-box shadow-xl p-4 sm:p-6">
+                <div className="stat-title text-base-content/70 text-xs sm:text-sm">Projects Completed</div>
+                <div className="stat-value text-primary text-3xl sm:text-4xl">{projectCount}+</div>
               </div>
             </div>
-            
+
             {/* Education Timeline - Now in Left Column */}
             <div className="mt-8">
               <h3 className="text-2xl font-bold font-['Poppins'] text-base-content mb-6">Education</h3>
               <div className="relative max-w-4xl">
                 {/* Timeline Line - Centered */}
                 <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary transform -translate-x-1/2"></div>
-                
+
                 {/* Timeline Items - Alternating Left/Right */}
                 <div className="space-y-8 relative">
                   {/* Item 1 - Right */}
@@ -95,7 +116,7 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Item 2 - Left */}
                   <div className="flex items-center relative">
                     <div className="w-1/2 pr-4 text-right">
@@ -113,7 +134,7 @@ const About = () => {
                     </div>
                     <div className="w-1/2 pl-4"></div>
                   </div>
-                  
+
                   {/* Item 3 - Right */}
                   <div className="flex items-center relative">
                     <div className="w-1/2 pr-4"></div>
@@ -131,7 +152,7 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Item 4 - Left */}
                   <div className="flex items-center relative">
                     <div className="w-1/2 pr-4 text-right">

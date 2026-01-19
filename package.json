@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "optimize-images": "node scripts/optimize-images.js",
+    "build": "npm run optimize-images && vite build",
     "preview": "vite preview",
     "deploy": "npm run build && npm run gh-pages"
   },
@@ -23,6 +24,7 @@
     "autoprefixer": "^10.4.16",
     "daisyui": "^4.4.19",
     "postcss": "^8.4.32",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.3.6",
     "vite": "^5.0.8"
   }

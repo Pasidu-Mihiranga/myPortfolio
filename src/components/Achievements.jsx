@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FaTrophy, FaMedal, FaAward } from 'react-icons/fa'
+import { getOptimizedImagePath } from '../utils/imageUtils'
 
 const Achievements = () => {
   const [achievements, setAchievements] = useState([])
@@ -35,48 +36,47 @@ const Achievements = () => {
             achievements.map((achievement, index) => (
               <div
                 key={index}
-                className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 animate-fade-in w-full max-w-sm mx-auto relative"
+                className="achievement-card card shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 animate-fade-in w-full max-w-sm mx-auto relative rounded-2xl overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
               >
                 {/* Position Badge Icon */}
                 {achievement.position && (
-                  <div className={`absolute top-4 right-4 z-10 ${
-                    achievement.position === 1 ? 'text-yellow-400' :
+                  <div className={`absolute top-4 right-4 z-10 ${achievement.position === 1 ? 'text-yellow-400' :
                     achievement.position === 2 ? 'text-gray-300' :
-                    achievement.position === 3 ? 'text-orange-400' :
-                    'text-blue-400'
-                  }`}>
+                      achievement.position === 3 ? 'text-orange-400' :
+                        'text-blue-400'
+                    }`}>
                     {achievement.position === 1 && <FaTrophy className="w-8 h-8" />}
                     {achievement.position === 2 && <FaMedal className="w-8 h-8" />}
                     {achievement.position === 3 && <FaMedal className="w-8 h-8" />}
                     {achievement.position > 3 && <FaAward className="w-8 h-8" />}
                   </div>
                 )}
-                
+
                 {achievement.image && (
                   <figure className="overflow-hidden h-80 relative rounded-t-3xl">
                     {/* Position Badge on Image */}
                     {achievement.position && (
-                      <div className={`absolute top-4 right-4 z-10 flex items-center gap-2 bg-base-100/90 backdrop-blur-sm px-3 py-2 rounded-full shadow-lg ${
-                        achievement.position === 1 ? 'border-2 border-yellow-400' :
+                      <div className={`absolute top-4 right-4 z-10 flex items-center gap-2 bg-base-100/90 backdrop-blur-sm px-3 py-2 rounded-full shadow-lg ${achievement.position === 1 ? 'border-2 border-yellow-400' :
                         achievement.position === 2 ? 'border-2 border-gray-300' :
-                        achievement.position === 3 ? 'border-2 border-orange-400' :
-                        'border-2 border-blue-400'
-                      }`}>
+                          achievement.position === 3 ? 'border-2 border-orange-400' :
+                            'border-2 border-blue-400'
+                        }`}>
                         {achievement.position === 1 && <FaTrophy className="w-5 h-5 text-yellow-500" />}
                         {achievement.position === 2 && <FaMedal className="w-5 h-5 text-gray-400" />}
                         {achievement.position === 3 && <FaMedal className="w-5 h-5 text-orange-500" />}
                         {achievement.position > 3 && <FaAward className="w-5 h-5 text-blue-500" />}
                         <span className="text-sm font-bold font-['Poppins']">
                           {achievement.position === 1 ? 'CHAMPIONS' :
-                           achievement.position === 2 ? '2ND PLACE' :
-                           achievement.position === 3 ? '3RD PLACE' :
-                           `${achievement.position}TH PLACE`}
+                            achievement.position === 2 ? '2ND PLACE' :
+                              achievement.position === 3 ? '3RD PLACE' :
+                                typeof achievement.position === 'string' ? achievement.position.toUpperCase() :
+                                  `${achievement.position}TH PLACE`}
                         </span>
                       </div>
                     )}
                     <img
-                      src={achievement.image.startsWith('/') ? `${import.meta.env.BASE_URL}${achievement.image.slice(1)}` : achievement.image}
+                      src={getOptimizedImagePath(achievement.image, import.meta.env.BASE_URL)}
                       alt={achievement.title}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-300 rounded-b-3xl"
                       onError={(e) => {
@@ -88,22 +88,22 @@ const Achievements = () => {
                 <div className={`card-body ${achievement.image ? 'p-5' : 'p-4 min-h-[200px]'}`}>
                   <div className="flex flex-col gap-3">
                     <div className="flex justify-between items-start">
-                      <h3 className="text-xl font-bold font-['Poppins'] text-base-content flex-1">
+                      <h3 className="achievement-card-title text-xl font-bold font-['Poppins'] flex-1">
                         {achievement.title || 'Achievement'}
                       </h3>
                       {achievement.year && (
-                        <div className="badge badge-primary badge-sm ml-2">
+                        <div className="achievement-card-badge badge badge-sm ml-2">
                           {achievement.year}
                         </div>
                       )}
                     </div>
                     {achievement.institution && (
-                      <p className="text-primary font-['Poppins'] font-semibold text-sm">
+                      <p className="achievement-card-institution font-['Poppins'] font-semibold text-sm">
                         {achievement.institution}
                       </p>
                     )}
                     {achievement.description && (
-                      <p className="text-base-content/70 font-['Poppins'] text-sm leading-relaxed">
+                      <p className="achievement-card-description font-['Poppins'] text-sm leading-relaxed">
                         {achievement.description}
                       </p>
                     )}

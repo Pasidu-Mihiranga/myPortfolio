@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { getOptimizedImagePath } from '../utils/imageUtils'
 
 const Hero = () => {
   const navigate = useNavigate()
@@ -8,29 +9,29 @@ const Hero = () => {
       console.log('Starting CV download...')
       // Fetch the CV file
       const response = await fetch(`${import.meta.env.BASE_URL}cv.pdf`)
-      
+
       if (!response.ok) {
         throw new Error(`Failed to load CV: ${response.statusText}`)
       }
-      
+
       console.log('CV file loaded, converting to blob...')
       // Get the file as a blob
       const blob = await response.blob()
       console.log('Blob created, size:', blob.size, 'bytes')
-      
+
       // Create a URL for the blob
       const blobUrl = window.URL.createObjectURL(blob)
-      
+
       // Create a temporary anchor element to trigger download
       const link = document.createElement('a')
       link.href = blobUrl
       link.download = 'Pasindu_Mihiranga_CV.pdf'
       link.style.display = 'none'
       document.body.appendChild(link)
-      
+
       console.log('Triggering download...')
       link.click()
-      
+
       // Clean up
       document.body.removeChild(link)
       window.URL.revokeObjectURL(blobUrl)
@@ -105,7 +106,7 @@ const Hero = () => {
           <div className="absolute top-16 right-0 w-full max-w-xs profile-photo-mobile md:relative md:flex md:justify-end md:items-start md:pt-8 md:opacity-100 md:z-0 md:col-span-1 md:max-w-none lg:pt-20">
             <div className="relative w-full max-w-sm md:max-w-lg lg:max-w-2xl z-0">
               <img
-                src={`${import.meta.env.BASE_URL}images/home/profile-photo.png`}
+                src={getOptimizedImagePath('/images/home/profile-photo.png', import.meta.env.BASE_URL)}
                 alt="Pasindu Mihiranga - Profile"
                 className="w-full h-auto rounded-3xl object-cover shadow-2xl"
                 onError={(e) => {

@@ -26,6 +26,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -50,4 +51,140 @@ html {
   .hero-text-desktop-reduced {
     font-size: calc(1em - 3pt);
   }
+}
+
+/* Project Cards - Theme Aware Styles */
+/* Light mode (emerald theme) - soften gradients, dark text */
+[data-theme="emerald"] .project-card-overlay {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme="emerald"] .project-card-icon {
+  color: #1f2937;
+}
+
+[data-theme="emerald"] .project-card-title {
+  color: #111827;
+}
+
+[data-theme="emerald"] .project-card-description {
+  color: #374151;
+}
+
+[data-theme="emerald"] .project-card-badge {
+  background-color: rgba(17, 24, 39, 0.15);
+  color: #1f2937;
+  border-color: rgba(17, 24, 39, 0.25);
+}
+
+[data-theme="emerald"] .project-card-badge:hover {
+  background-color: rgba(17, 24, 39, 0.25);
+}
+
+[data-theme="emerald"] .project-card-button {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+[data-theme="emerald"] .project-card-button:hover {
+  background-color: #374151;
+}
+
+[data-theme="emerald"] .project-card-circle {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Dark mode (synthwave theme) - vibrant gradients, white text */
+[data-theme="synthwave"] .project-card-overlay {
+  background-color: transparent;
+}
+
+[data-theme="synthwave"] .project-card-icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="synthwave"] .project-card-title {
+  color: #ffffff;
+}
+
+[data-theme="synthwave"] .project-card-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="synthwave"] .project-card-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="synthwave"] .project-card-badge:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="synthwave"] .project-card-button {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+[data-theme="synthwave"] .project-card-button:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="synthwave"] .project-card-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Achievement Cards - Theme Aware Styles */
+/* Light mode (emerald theme) */
+[data-theme="emerald"] .achievement-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 245, 0.9));
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="emerald"] .achievement-card-title {
+  color: #1f2937;
+}
+
+[data-theme="emerald"] .achievement-card-institution {
+  color: #7c3aed;
+}
+
+[data-theme="emerald"] .achievement-card-description {
+  color: #4b5563;
+}
+
+[data-theme="emerald"] .achievement-card-badge {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+[data-theme="emerald"] .achievement-card-image-overlay {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* Dark mode (synthwave theme) */
+[data-theme="synthwave"] .achievement-card {
+  background: linear-gradient(135deg, rgba(30, 20, 50, 0.95), rgba(40, 25, 70, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="synthwave"] .achievement-card-title {
+  color: #f3f4f6;
+}
+
+[data-theme="synthwave"] .achievement-card-institution {
+  color: #f472b6;
+}
+
+[data-theme="synthwave"] .achievement-card-description {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="synthwave"] .achievement-card-badge {
+  background-color: #f472b6;
+  color: #1f2937;
+}
+
+[data-theme="synthwave"] .achievement-card-image-overlay {
+  background: linear-gradient(to top, rgba(30, 20, 50, 0.3), transparent);
 }
