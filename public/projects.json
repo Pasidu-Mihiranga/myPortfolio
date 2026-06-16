@@ -117,5 +117,79 @@
       "Multi-language Support"
     ],
     "link": "https://github.com/Kalana-Pankaja/sakura"
+  },
+  {
+    "title": "Quizzly Master (Live)",
+    "description": "AI-powered quiz generation platform with support for multiple LLM providers.",
+    "tech": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "OpenAI",
+      "Gemini",
+      "Claude AI"
+    ],
+    "link": "https://quizzlyedu.com/"
+  },
+  {
+    "title": "Piyoway Tourist Guide (Live)",
+    "description": "Smart tourist guide platform featuring itinerary planning, POI discovery and review management.",
+    "tech": [
+      "Next.js",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Cloudinary"
+    ],
+    "link": "https://piyoway.com/"
+  },
+  {
+    "title": "SwiftDrop",
+    "description": "Microservices-based flash-sale e-commerce platform supporting secure purchasing workflows.",
+    "tech": [
+      "Microservices",
+      "Authentication",
+      "Inventory Management"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/BitCode"
+  },
+  {
+    "title": "ShinnyMinds",
+    "description": "3D Unity-based character exploration game with custom assets and environment interactions.",
+    "tech": [
+      "Unity",
+      "C#",
+      "3D Game Development"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/ShinnyMinds"
+  },
+  {
+    "title": "Drug Classifier",
+    "description": "Machine learning solution for drug category prediction using classification techniques.",
+    "tech": [
+      "Machine Learning",
+      "Classification Models"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/ICDS_minihackathon"
+  },
+  {
+    "title": "PlanGmora (Live)",
+    "description": "Task management and team collaboration platform with milestone tracking.",
+    "tech": [
+      "Project Management System"
+    ],
+    "link": "https://github.com/ThanojBuddhima/ProjectManagementTool"
+  },
+  {
+    "title": "HMS With Attack System",
+    "description": "Hospital management system integrated with cybersecurity attack simulation capabilities.",
+    "tech": [
+      "Cybersecurity",
+      "Web Development"
+    ],
+    "link": "https://github.com/genzipher1-0-gmora/HMS_With_Attack_System"
   }
 ]

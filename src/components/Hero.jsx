@@ -4,44 +4,6 @@ import { getOptimizedImagePath } from '../utils/imageUtils'
 const Hero = () => {
   const navigate = useNavigate()
 
-  const handleDownloadCV = async () => {
-    try {
-      console.log('Starting CV download...')
-      // Fetch the CV file
-      const response = await fetch(`${import.meta.env.BASE_URL}cv.pdf`)
-
-      if (!response.ok) {
-        throw new Error(`Failed to load CV: ${response.statusText}`)
-      }
-
-      console.log('CV file loaded, converting to blob...')
-      // Get the file as a blob
-      const blob = await response.blob()
-      console.log('Blob created, size:', blob.size, 'bytes')
-
-      // Create a URL for the blob
-      const blobUrl = window.URL.createObjectURL(blob)
-
-      // Create a temporary anchor element to trigger download
-      const link = document.createElement('a')
-      link.href = blobUrl
-      link.download = 'Pasindu_Mihiranga_CV.pdf'
-      link.style.display = 'none'
-      document.body.appendChild(link)
-
-      console.log('Triggering download...')
-      link.click()
-
-      // Clean up
-      document.body.removeChild(link)
-      window.URL.revokeObjectURL(blobUrl)
-      console.log('CV download complete')
-    } catch (error) {
-      console.error('Error downloading CV:', error)
-      alert('Failed to download CV. Please try again or contact me directly.')
-    }
-  }
-
   const handleViewProjects = () => {
     // Navigate to projects page
     navigate('/projects')
@@ -93,12 +55,13 @@ const Hero = () => {
                 View My Projects
               </button>
 
-              <button
-                onClick={handleDownloadCV}
-                className="btn btn-outline btn-sm sm:btn-md md:btn-lg text-sm sm:text-base md:text-lg font-bold font-['Poppins'] btn-primary w-full hover:scale-105 transition-all shadow-lg hover:shadow-xl hero-text-desktop-reduced"
+              <a
+                href={`${import.meta.env.BASE_URL}Pasidu_Ilamperuma.pdf`}
+                download
+                className="btn btn-outline btn-sm sm:btn-md md:btn-lg text-sm sm:text-base md:text-lg font-bold font-['Poppins'] btn-primary w-full hover:scale-105 transition-all shadow-lg hover:shadow-xl hero-text-desktop-reduced text-center"
               >
                 Download My CV
-              </button>
+              </a>
             </div>
           </div>
 

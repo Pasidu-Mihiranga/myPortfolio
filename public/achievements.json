@@ -38,5 +38,29 @@
     "description": "Team Gmora selected for Top 5 teams in this intense competitive AI/ML programming challenge.",
     "image": "/achievements/BioFusion/thumbnail.webp",
     "position": "finalist"
+  },
+  {
+    "title": "BITCode",
+    "institution": "Department of Information Systems, Faculty of Management Studies, Rajarata University of Sri Lanka",
+    "year": "2026",
+    "description": "Champions in the BITCode hackathon and coding contest.",
+    "image": "/achievements/bitcode/thumbnail.webp",
+    "position": 1
+  },
+  {
+    "title": "GenZipher CTF",
+    "institution": "University of Colombo School of Computing",
+    "year": "2026",
+    "description": "Finalist in the GenZipher capture-the-flag cybersecurity challenge.",
+    "image": "/achievements/genzipher/thumbnail.webp",
+    "position": "finalist"
+  },
+  {
+    "title": "CrptX",
+    "institution": "Faculty of Technology, University of Sri Jayewardenepura",
+    "year": "2026",
+    "description": "Finalist in the CrptX cybersecurity competition.",
+    "image": "/achievements/crptx/thumbnail.webp",
+    "position": "finalist"
   }
 ]
