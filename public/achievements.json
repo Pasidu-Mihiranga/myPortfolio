@@ -8,6 +8,22 @@
     "position": 1
   },
   {
+    "title": "BITCode",
+    "institution": "Department of Information Systems, Faculty of Management Studies, Rajarata University of Sri Lanka",
+    "year": "2026",
+    "description": "Champions in the BITCode hackathon and coding contest.",
+    "image": "/achievements/bitcode/thumbnail.webp",
+    "position": 1
+  },
+  {
+    "title": "AlgoArena",
+    "institution": "Leo Club of University of Sri Jayawardanapura",
+    "year": "2025",
+    "description": "Team Gmora developed an innovative social media mobile app solution for Leo club, securing the second runner up title.",
+    "image": "/achievements/AlgoArena/thumbnail.webp",
+    "position": 3
+  },
+  {
     "title": "JapuraXtreme",
     "institution": "University of Sri Jayawardanapura",
     "year": "2025",
@@ -24,14 +40,6 @@
     "position": "finalist"
   },
   {
-    "title": "AlgoArena",
-    "institution": "Leo Club of University of Sri Jayawardanapura",
-    "year": "2025",
-    "description": "Team Gmora developed an innovative social media mobile app solution for Leo club, securing the second runner up title.",
-    "image": "/achievements/AlgoArena/thumbnail.webp",
-    "position": 3
-  },
-  {
     "title": "BioFusion",
     "institution": "University of Sri Jayawardanapura",
     "year": "2026",
@@ -39,14 +47,7 @@
     "image": "/achievements/BioFusion/thumbnail.webp",
     "position": "finalist"
   },
-  {
-    "title": "BITCode",
-    "institution": "Department of Information Systems, Faculty of Management Studies, Rajarata University of Sri Lanka",
-    "year": "2026",
-    "description": "Champions in the BITCode hackathon and coding contest.",
-    "image": "/achievements/bitcode/thumbnail.webp",
-    "position": 1
-  },
+ 
   {
     "title": "GenZipher CTF",
     "institution": "University of Colombo School of Computing",
