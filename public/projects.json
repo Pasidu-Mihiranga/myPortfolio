@@ -1,5 +1,24 @@
 [
   {
+    "title": "Purawasi",
+    "description": "Multilingual voice-enabled AI platform leveraging 20+ specialized agents for government service automation, document intelligence, and citizen assistance.",
+    "tech": [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Gemini",
+      "Llama",
+      "Qdrant",
+      "PostgreSQL",
+      "React",
+      "React Native",
+      "Tesseract OCR",
+      "LiveKit",
+      "Whisper"
+    ],
+    "link": "https://github.com/Pasidu-Mihiranga/Shopshere"
+  },
+  {
     "title": "Shopshere E-commerse Project",
     "description": "Fully functioning Marketplace website",
     "tech": [
