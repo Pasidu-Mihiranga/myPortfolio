@@ -8,14 +8,6 @@
     "position": 1
   },
   {
-    "title": "Vectra",
-    "institution": "IIT Sri lanka",
-    "year": "2026",
-    "description": "Team InsightAI secured the First Runner-Up position in the King of the Hill CTF Competition.",
-    "image": "/achievements/Vectra/IMG_5360.webp",
-    "position": 2
-  },
-  {
     "title": "InnovateX Hackathon",
     "institution": "Zebra Technologies",
     "year": "2025",
@@ -30,6 +22,14 @@
     "description": "Champions in the BITCode hackathon and coding contest.",
     "image": "/achievements/bitcode/thumbnail.webp",
     "position": 1
+  },
+  {
+    "title": "Vectra",
+    "institution": "IIT Sri lanka",
+    "year": "2026",
+    "description": "Team InsightAI secured the First Runner-Up position in the King of the Hill CTF Competition.",
+    "image": "/achievements/Vectra/IMG_5360.webp",
+    "position": 2
   },
   {
     "title": "AlgoArena",
@@ -63,7 +63,6 @@
     "image": "/achievements/BioFusion/thumbnail.webp",
     "position": "finalist"
   },
- 
   {
     "title": "GenZipher CTF",
     "institution": "University of Colombo School of Computing",
