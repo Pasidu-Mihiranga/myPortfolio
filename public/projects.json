@@ -1,5 +1,20 @@
 [
   {
+    "title": "SuwaPath",
+    "description": "Engineered a healthcare platform comprising a collection of specialized ML and vision models, orchestrated by a bounded LangGraph agentic loop and a 23-rule deterministic triage engine to achieve 100% emergency detection (8/8 cases). Developed a multilingual NLP pipeline mapping English, Sinhala, and Tamil symptom inputs to ∼90 clinical concepts, enabling capability-aware matching to route patients to appropriate hospital specialties and facilities. Integrated predictive models for 7-day specialty demand forecasting and automated medical report OCR, benchmarking the multi-model ecosystem against a 114-vignette gold dataset and passing 150+ automated agentic scenario checks.",
+    "tech": [
+      "Python",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "LangGraph",
+      "PostgreSQL",
+      "Qdrant",
+      "Tailwind"
+    ],
+    "link": "#"
+  },
+  {
     "title": "Purawasi",
     "description": "Multilingual voice-enabled AI platform leveraging 20+ specialized agents for government service automation, document intelligence, and citizen assistance.",
     "tech": [
